@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TODO: Set the document title to the name of your application -->
+     <link rel="icon" type="image/png" href="/image.png" />
+    <title>Saarthak</title>
+  <style>
+      /* Disable right click */
+      body {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+      }
+    </style>
+  </head>
+  <body oncontextmenu="return false;">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Disable right click
+      document.addEventListener('contextmenu', event => event.preventDefault());
+      // Disable text selection
+      document.addEventListener('selectstart', event => event.preventDefault());
+    </script>
+  </body>
+</html>
